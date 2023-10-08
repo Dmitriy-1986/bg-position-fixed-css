@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+            min-height: 100vh;
+            color: yellow;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .header::before {
+            content: "";
+            background-image: url('./unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.772);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>ПРОКРУТИ В НИЗ</h1>
+    </div>
+    <div class="main">
+        <h1>ФОН ЗАФИКСИРОВАН</h1>
+    </div>
+
+</body>
+
+</html>
